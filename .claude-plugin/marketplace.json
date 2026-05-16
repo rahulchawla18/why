@@ -1,0 +1,17 @@
+{
+  "name": "why",
+  "owner": {
+    "name": "Rahul Chawla",
+    "url": "https://github.com/rahulchawla18"
+  },
+  "plugins": [
+    {
+      "name": "why",
+      "source": ".",
+      "description": "Explains why code exists, grounded in real git history. /why <file>[:<line>|:<start>-<end>]",
+      "version": "0.1.0",
+      "category": "developer-tools",
+      "keywords": ["git", "code-archaeology", "developer-tools"]
+    }
+  ]
+}

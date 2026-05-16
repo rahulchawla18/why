@@ -1,0 +1,12 @@
+{
+  "name": "why",
+  "version": "0.1.0",
+  "description": "Explains why code exists, grounded in real git history. /why <file>[:<line>|:<start>-<end>]",
+  "author": {
+    "name": "Why contributors"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/rahulchawla18/why",
+  "repository": "https://github.com/rahulchawla18/why",
+  "keywords": ["git", "code-archaeology", "developer-tools"]
+}
