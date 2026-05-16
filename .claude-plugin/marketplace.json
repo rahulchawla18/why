@@ -1,5 +1,6 @@
 {
   "name": "why",
+  "description": "Distribution of the `why` plugin: a slash command that explains why a piece of code exists, grounded in git history and PR data.",
   "owner": {
     "name": "Rahul Chawla",
     "url": "https://github.com/rahulchawla18"
@@ -7,7 +8,7 @@
   "plugins": [
     {
       "name": "why",
-      "source": ".",
+      "source": "./plugin",
       "description": "Explains why code exists, grounded in real git history. /why <file>[:<line>|:<start>-<end>]",
       "version": "0.1.0",
       "category": "developer-tools",
