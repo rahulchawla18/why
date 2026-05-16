@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "why-plugin"
+version = "0.1.0"
+description = "Claude Code plugin that explains why code exists, grounded in real git history."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Why contributors" }]
+keywords = ["claude-code", "git", "code-archaeology", "developer-tools"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1"]
+
+[project.scripts]
+why = "why.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

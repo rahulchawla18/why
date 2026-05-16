@@ -1,0 +1,24 @@
+{
+  "name": "why",
+  "version": "0.1.0",
+  "description": "Explains why code exists, grounded in real git history. /why <file>[:<line>|:<start>-<end>]",
+  "author": "Why contributors",
+  "license": "MIT",
+  "homepage": "https://github.com/rahulchawla18/why",
+  "repository": "https://github.com/rahulchawla18/why",
+  "keywords": ["git", "code-archaeology", "developer-tools"],
+  "commands": [
+    {
+      "name": "why",
+      "file": ".claude/commands/why.md",
+      "description": "Explain why a piece of code exists, using git history and PR data."
+    }
+  ],
+  "requires": {
+    "python": ">=3.10",
+    "git": ">=2.20"
+  },
+  "optional": {
+    "gh": "Enables richer narratives by fetching PR descriptions and linked issues. Without it, the plugin falls back to commit-message-only output."
+  }
+}
