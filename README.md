@@ -10,9 +10,14 @@ Most code archaeology takes 30 minutes of `git log -L` and tab-switching between
 
 ## Install
 
-```sh
-claude plugin install rahulchawla18/why
+Inside Claude Code, register this repo as a plugin marketplace, then install the plugin from it:
+
 ```
+/plugin marketplace add rahulchawla18/why
+/plugin install why@why
+```
+
+The first command points Claude Code at this repo's `.claude-plugin/marketplace.json`; the second installs the `why` plugin from that marketplace. See [`plugin-setup.md`](./plugin-setup.md) for the full setup walkthrough, including the Python data-gathering layer.
 
 You'll also need:
 
