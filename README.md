@@ -11,7 +11,7 @@ Most code archaeology takes 30 minutes of `git log -L` and tab-switching between
 ## Install
 
 ```sh
-claude plugin install github:rahulchawla18/why
+claude plugin install rahulchawla18/why
 ```
 
 You'll also need:
